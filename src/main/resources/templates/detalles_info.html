@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drag Racing</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <h1 th:text="${Titulo}"></h1>
-    <p th:text="${Descripcion}"></p>
-    <img th:src="${Imagen}" alt="Drag Racing Image" style="width: 500px; height: auto;">
+    <h1>Lista de Competidores</h1>
+    <ul>
+        <li><strong>Marca:</strong> <span th:text="${Carro.marca}"></span></li>
+        <li><strong>Modelo:</strong> <span th:text="${Carro.modelo}"></span></li>
+        <li><strong>Año:</strong> <span th:text="${Carro.año}"></span></li>
+        <li><strong>Apodo:</strong> <span th:text="${Carro.apodo}"></span></li>
+    </ul>
+
+    
 </body>
 </html>
