@@ -1,0 +1,21 @@
+package com.curso.springboot.app1.springboot_aplication.controller;
+
+import java.util.HashMap;
+import java.util.Map;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+
+@RestController
+public class EjemploRestController {
+
+    @GetMapping("/detalles_info2")
+    public Map<String, Object> detalles_info2() {
+        Map<String, Object> respuesta = new HashMap<>();
+        respuesta.put("Titulo", "Drag Racing Details");
+        respuesta.put("Descripcion", "Drag racing es una forma de competición automovilística en la que dos vehículos compiten en una carrera de aceleración en línea recta, generalmente en una pista de un cuarto de milla (402 metros). El objetivo es llegar a la meta lo más rápido posible, y el ganador es el que cruza la línea de meta primero. El drag racing se caracteriza por su alta velocidad y la emoción que genera entre los espectadores.");
+        respuesta.put("Imagen", "https://dragillustrated.com/wp-content/uploads/2024/11/PDRA-schedule_Tara-Bowker-photo_DI-web-1024x576.jpg");
+        return respuesta;
+    }
+
+}
