@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drag Racing</title>
 </head>
 <body>
-    <h1>Drag Racing Details</h1>
+    <h1 th:text="${Titulo}"></h1>
+    <p th:text="${Descripcion}"></p>
+    <img th:src="${Imagen}" alt="Drag Racing Image" style="width: 500px; height: auto;">
 </body>
 </html>
