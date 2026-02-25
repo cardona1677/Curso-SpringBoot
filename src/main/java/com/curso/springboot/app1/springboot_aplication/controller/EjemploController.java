@@ -12,7 +12,7 @@ public class EjemploController {
 
     @GetMapping("/detalles_info")
     public String info(Model model) {
-        Carros carro2 = new Carros(2L, "Chevrolet", "Nova", 1971, "Murder Nova");
+        Carros carro2 = new Carros(2L, "Chevrolet", "Nova", 1971, null);
         model.addAttribute("Carro", carro2);
         return "detalles_info";
     }

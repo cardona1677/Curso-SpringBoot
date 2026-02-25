@@ -12,7 +12,7 @@
         <li><strong>Marca:</strong> <span th:text="${Carro.marca}"></span></li>
         <li><strong>Modelo:</strong> <span th:text="${Carro.modelo}"></span></li>
         <li><strong>Año:</strong> <span th:text="${Carro.año}"></span></li>
-        <li><strong>Apodo:</strong> <span th:text="${Carro.apodo}"></span></li>
+        <li><strong>Apodo:</strong> <span th:text="${Carro.apodo != null ? Carro.apodo : 'No tiene'}"></span></li>
     </ul>
 
     
