@@ -36,4 +36,12 @@ public class EjemploRestController {
         return carroDTO;
     }
 
+    // @ModelAttribute("carros")
+    // public List<Carros> ListaCarros(){
+    //     return Arrays.asList(
+    //         new Carros(3L, "Chevrolet", "Camaro", 2005, "Fireball Camaro"),
+    //         new Carros(4L, "Ford", "Mustang", 1986, "Death Trap")
+    //     );
+    // }
+
 }

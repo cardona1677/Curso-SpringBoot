@@ -15,6 +15,25 @@
         <li><strong>Apodo:</strong> <span th:text="${Carro.apodo != null ? Carro.apodo : 'No tiene'}"></span></li>
     </ul>
 
+    <table>
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Año</th>
+                <th>Apodo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="carro : ${carros}">
+                <td th:text="${carro.marca}"></td>
+                <td th:text="${carro.modelo}"></td>
+                <td th:text="${carro.año}"></td>
+                <td th:text="${carro.apodo != null ? carro.apodo : 'No tiene'}"></td>
+            </tr>
+        </tbody>
+    </table>
+
     
 </body>
 </html>
